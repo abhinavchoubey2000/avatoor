@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    background-color: #858585;
+}
+img{
+    height: 18rem;
+}
+h1{
+    font-family: 'Macondo', cursive;
+    font-size: 4rem;
+    color:  white;
+}
+h2{
+    font-family: 'Macondo', cursive;
+    color:  white;
+}
+input{
+    font-size: larger;
+    font-weight: bolder;
+    width: 25vw;
+    text-transform:uppercase;
+    border-top-left-radius: 1.6rem;
+    border-top-right-radius: 1.6rem;
+    border-style: solid;
+    border-color: white;
+    background-color: #b5c2ef;
+}
+input:focus{
+    outline: none;
+    border-color: black;
+}
+button{
+    font-size: larger;
+    border-bottom-left-radius: 1.6rem;
+    border-bottom-right-radius: 1.6rem;
+    border-style: solid;
+    border-color: white;
+    font-weight: bolder;
+    width: 15vw;
+    background-color: #000000;
+    color: #92a9db;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #92a9db;
+    color: black;
+    border-color: black;
+    border-top-left-radius: 1.6rem;
+    border-top-right-radius: 1.6rem;
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+}
+.image-field{
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:480px){
+    h1{
+        font-size: 1.5rem;
+    }
+    input{
+        font-size: small;
+        width: 60vw;
+    }
+    button{
+        font-size: small;
+        width: 40vw;
+    }
+}

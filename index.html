@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./yoda.png" type="image/x-icon">
+    <title>Avatoor - Have your Avatar according to your name</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./utility.css">
+</head>
+<body>
+    <div class="container flex-col my-30">
+        <h1 class="py-20">Type your name to see your Avatar</h1>
+        <div id="input-field" class="flex flex-col">
+            <input class="p-10 text-center transition-400ms" type="text" autocomplete="off" id="name" placeholder="Your name goes here . . .">
+        </div>
+        <div id="image-box" class="image-field my-5 transition-400ms">
+            <img class="box-circle my-30 transition-400ms" id="avatar" src="./default_avatar.png" alt="">
+        </div>
+        <button id="btn" class="transition-400ms p-10" onclick="showAvatar()">Show Avatar</button>
+    </div>    
+    <script src="./script.js"></script>
+</body>
+</html>
