@@ -62,7 +62,19 @@ button:hover{
     justify-content: center;
     align-items: center;
 }
-
+.cancel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cancel-image{
+    display: none;
+    height: 4vh;
+    position: absolute;
+    padding-right: 3rem;
+    justify-content: center;
+    align-items: center;
+}
 @media(max-width:480px){
     h1{
         font-size: 1.2rem;
@@ -77,5 +89,8 @@ button:hover{
     button{
         font-size: small;
         width: 40vw;
+    }
+    #cancel-image{
+        height: 3vh;
     }
 }
