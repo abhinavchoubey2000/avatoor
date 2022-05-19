@@ -6,7 +6,13 @@ function showAvatar() {
         setTimeout(() => {
             imageBox.innerHTML = `<img class="box-circle my-30" id="avatar" src="./default_avatar.png" alt="">`;    
         }, 5000);
-        imageBox.innerHTML = `<h2>The Name Field Is Required!</h2>`;
+        imageBox.innerHTML = `<h2>The Name Field Is Required! 😒</h2>`;
+    }
+    else if(name.value.split(" ").length==2){
+        setTimeout(() => {
+            imageBox.innerHTML = `<img class="box-circle my-30" id="avatar" src="./default_avatar.png" alt="">`;    
+        }, 5000);
+        imageBox.innerHTML = `<h2>I Said Enter Your First Name Only! 😒</h2>`;
     }
     else if(name.value!=""){
         const url = `https://joeschmoe.io/api/v1/${name.value}`;
